@@ -1,0 +1,151 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(#6ea3c0, #adc8e2, #5cac79, #74ca81);
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 30px 20px 20px;
+  color: #333;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Search Wrapper */
+.search-wrapper {
+  text-align: center;
+  margin: 20px auto 30px;
+  padding: 0 15px;
+}
+
+.search-wrapper input {
+  padding: 15px;
+  width: 90%;
+  max-width: 450px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ced4da;
+  box-sizing: border-box;
+}
+
+.search-wrapper textarea {
+  transition: border 0.3s ease, transform 0.3s;
+}
+
+/* Clear Button */
+#clearBtn {
+  padding: 10px 16px;
+  margin-left: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+
+#clearBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Dealer Grid Section */
+.dealers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 100px;
+  padding: 50px 40px 100px;
+  justify-items: center;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.dealer-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 370px;
+}
+
+
+.dealer-card:hover {
+  transform: translateY(-5px);
+}
+
+.dealer-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.dealer-card p {
+  font-size: 0.95rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+.dealer-card i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.dealer-card iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Become a Dealer Section */
+.become-dealer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e8f0ff;
+}
+
+.become-dealer h2 {
+  font-size: 1.75rem;
+  color: #007bff;
+}
+
+.become-dealer p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.dealer-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s;
+  display: inline-block;
+}
+
+.dealer-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 1200px) {
+  .dealers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dealers-grid {
+    grid-template-columns: 1fr;
+  }
+}

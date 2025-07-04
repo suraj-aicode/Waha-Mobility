@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+.service-header {
+  background-color: #582f0e;
+  color: #fffde7;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.service-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.service-header p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.service-booking {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.form-container {
+  background-color: #f9f7f3;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #66bb6a;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #66bb6a;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #f57c00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e65100;
+}
+
+.footer {
+  background-color: #333333;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
+/* Trail */
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect with green accent */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #66bb6a; /* Leaf green */
+  box-shadow: 0 0 5px #66bb6a55;
+  outline: none;
+}
+
+/* Optional hover effect */
+input[type="text"]:hover,
+input[type="tel"]:hover,
+select:hover {
+  border-color: #a5d6a7;
+}
