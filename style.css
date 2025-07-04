@@ -818,3 +818,10 @@ body {
   height: auto;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff 	;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
