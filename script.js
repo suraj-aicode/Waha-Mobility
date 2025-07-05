@@ -12,7 +12,8 @@ function calculateSavings() {
   const monthlySaving = dailyFuelCost * 30;
   const yearlySaving = dailyFuelCost * 365;
 
-  document.getElementById("monthlySaving").textContent = monthlySaving.toFixed(2);
+  document.getElementById("monthlySaving").textContent =
+    monthlySaving.toFixed(2);
   document.getElementById("yearlySaving").textContent = yearlySaving.toFixed(2);
   document.getElementById("co2Saving").textContent = co2Saving.toFixed(0);
   document.getElementById("treesSaved").textContent = treesSaved;
@@ -20,39 +21,39 @@ function calculateSavings() {
 
 // Close banner
 function closeBanner() {
-  const banner = document.getElementById('popupBanner');
-  banner.style.animation = 'fadeOut 0.5s ease forwards';
+  const banner = document.getElementById("popupBanner");
+  banner.style.animation = "fadeOut 0.5s ease forwards";
   setTimeout(() => {
-    banner.style.display = 'none';
+    banner.style.display = "none";
   }, 500);
 }
 
 // Show dropdown with fade-in animation
 function showDropdown(type) {
-  document.querySelectorAll('.mega-dropdown').forEach(drop => {
-    drop.style.display = 'none';
+  document.querySelectorAll(".mega-dropdown").forEach((drop) => {
+    drop.style.display = "none";
   });
 
-  const target = document.getElementById('dropdown-' + type);
-  target.style.display = 'block';
-  target.style.animation = 'fadeIn 0.4s ease';
+  const target = document.getElementById("dropdown-" + type);
+  target.style.display = "block";
+  target.style.animation = "fadeIn 0.4s ease";
 }
 
 // Hide dropdown
 function hideDropdown() {
-  document.querySelectorAll('.mega-dropdown').forEach(drop => {
-    drop.style.display = 'none';
+  document.querySelectorAll(".mega-dropdown").forEach((drop) => {
+    drop.style.display = "none";
   });
 }
 
 // Volvo car logo
 function reset() {
-  const reset = document.getElementById('Company-logo');
-}  
+  const reset = document.getElementById("Company-logo");
+}
 
 let currentSlide = 0;
-const slider = document.getElementById('slider');
-const totalSlides = slider.children.length-1;
+const slider = document.getElementById("slider");
+const totalSlides = slider.children.length - 1;
 
 function updateSlider() {
   slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
