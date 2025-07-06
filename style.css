@@ -817,3 +817,92 @@ body {
   max-width: 105%;
   height: auto;
 }
+/* ===================== Responsive Styles ===================== */
+@media screen and (max-width: 768px) {
+
+  .First-Pic,
+  .hero-section,
+  .hero-section2,
+  .hero-section3,
+  .hero-section4,
+  .hero-section5,
+  .hero-section6,
+  .savings-wrapper,
+  .benefits-section,
+  .card-section {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 20px !important;
+  }
+
+  .First-content,
+  .hero-content,
+  .hero-content2,
+  .hero-content3,
+  .hero-content4,
+  .hero-content5,
+  .hero-content6 {
+    margin: 0 auto !important;
+  }
+
+  .First-content h1,
+  .hero-content h1,
+  .hero-content2 h1,
+  .hero-content3 h1,
+  .hero-content4 h1,
+  .hero-content5 h1,
+  .hero-content6 h1 {
+    font-size: 40px !important;
+  }
+
+  .First-content h2,
+  .hero-content p,
+  .hero-content2 p,
+  .hero-content3 p,
+  .hero-content4 p,
+  .hero-content5 p,
+  .hero-content6 p,
+  .hero-content6 h2,
+  .hero-content6 h4 {
+    font-size: 20px !important;
+  }
+
+  .First-image img,
+  .hero-image img,
+  .hero-image2 img,
+  .hero-image3 img,
+  .hero-image4 img,
+  .hero-image5 img,
+  .hero-image6 img {
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 20px 0;
+  }
+
+  .benefits-image img {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .calculator-section,
+  .results-section {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+
+  .card {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .benefits-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefits-list i {
+    margin-bottom: 10px;
+  }
+
+}
