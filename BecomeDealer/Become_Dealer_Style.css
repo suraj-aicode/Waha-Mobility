@@ -1,174 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Dealer</title>
+  <link rel="stylesheet" href="/BecomeDealer/Become_Dealer_Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f2f2f2, #e6f7ff);
-  color: #333;
-  animation: fadeInBody 1s ease-in-out;
-}
+<!-- Back Button -->
+<button class="back-button" onclick="history.back()">
+  <i class="fas fa-arrow-left"></i> Back
+</button>
+  
+  <!-- Header -->
+  <header>
+    <h1 class="animated-text" data-text="Partner With Us"></h1>
+    <p class="animated-text" data-text="Become a Dealer and Grow With India's Leading EV Brand"></p>
+  </header>
 
-@keyframes fadeInBody {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+  <!-- Form Section -->
+  <section class="form-section">
+    <form id="dealerForm">
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
 
-header {
-  background-color: #007BFF;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  animation: slideDown 0.8s ease-in-out;
-}
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+      <div class="form-group">
+        <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
+      <div class="form-group">
+        <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+        <input type="text" id="location" name="location" required />
+      </div>
 
-.form-section {
-  max-width: 700px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  animation: fadeInUp 1s ease-in;
-}
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment-dots"></i> Why do you want to become a dealer?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
 
-@keyframes fadeInUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+      <button type="submit" class="submit-btn">Submit Application</button>
+      <p id="successMsg" class="success-message">Your application has been submitted. We’ll contact you soon!</p>
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.form-group i {
-  margin-right: 8px;
-  color: #007BFF;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
-  outline: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 12px;
-  background-color: #007BFF;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.02);
-}
-
-.success-message {
-  display: none;
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-  border-radius: 8px;
-  font-weight: 500;
-  text-align: center;
-  animation: fadeSuccess 0.6s ease-in;
-}
-
-@keyframes fadeSuccess {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
-/* ----------- Responsive Media Queries ----------- */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .form-section {
-    margin: 30px 15px;
-    padding: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .submit-btn {
-    font-size: 1rem;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    font-size: 0.95rem;
-  }
-
-  .form-section {
-    padding: 20px;
-  }
-}
+    </form>
+  </section>
+  <script src="/BecomeDealer/Become_Dealer_script.js"></script>
+</body>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("/Footer/Hero_Footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+</html>
