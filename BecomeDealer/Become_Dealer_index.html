@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Dealer</title>
+  <link rel="stylesheet" href="/BecomeDealer/Become_Dealer_Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Back Button -->
+<button class="back-button" onclick="history.back()">
+  <i class="fas fa-arrow-left"></i> Back
+</button>
+  
+  <!-- Header -->
+  <header>
+    <h1 class="animated-text" data-text="Partner With Us"></h1>
+    <p class="animated-text" data-text="Become a Dealer and Grow With India's Leading EV Brand"></p>
+  </header>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <form id="dealerForm">
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+        <input type="text" id="location" name="location" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment-dots"></i> Why do you want to become a dealer?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+      <p id="successMsg" class="success-message">Your application has been submitted. We’ll contact you soon!</p>
+
+    </form>
+  </section>
+  <script src="/BecomeDealer/Become_Dealer_script.js"></script>
+</body>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("/Footer/Hero_Footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+</html>

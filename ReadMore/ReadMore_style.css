@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.Section-1 {
+    height: 700px;
+    display: flex;
+    justify-content: flex-end; /* Push content to the right */
+    background-image: url("/Images/Read_img.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+  
+  .Section-1 .box {
+    margin-top: 250px;
+    max-height: 300px;
+    max-width: 650px; /* Optional: controls text width */
+    text-align: right;
+    background-color: aqua;
+  }
+  
+  .Section-1 h1 {
+    padding: 20px;
+    font-size: 70px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .Section-1 p {
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .Section-2 {
+    margin-top: -100px;
+    background-color: #000;
+  }
+  
+
+.header{
+    margin: 100px;
+    font-size: 40px;
+    font-family: "Roboto Slab";
+    color:  #ffffffaa;
+}
+
+.Paragraph{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.strengths-section {
+    padding: 40px 5%;
+    background-color: #f0f0f0;
+  }
+  
+  .strengths-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 50px;
+  }
+  
+  .card {
+    background-color:#ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  
+  .card h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #222;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #444;
+  }

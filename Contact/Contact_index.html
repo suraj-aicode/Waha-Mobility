@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waha Mobility | Contact Us</title>
+    <link rel="stylesheet" href="/Contact/Contact_style.css">
+</head>
+    <!-- Nav-Bar -->
+
+   <div id="NavBar-placeholder"></div>
+    <script>
+    fetch("/Nav-Bar/Hero_Nav.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("NavBar-placeholder").innerHTML = data;
+        });
+    </script>
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+
+  
+  <div class="contact-container">
+    <div class="contact-info fade-in-left">
+      <div class="Icons">
+        <i class="fa-solid fa-address-card"></i>
+      </div>
+
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out using the form or contact us directly.</p>
+
+      <div class="info-block"><i class="fa-solid fa-phone"></i> <span>+91 9876543210</span></div>
+      <div class="info-block"><i class="fas fa-envelope"></i> <span>support@electroscoot.com</span></div>
+      <div class="info-block"><i class="fa-solid fa-location-dot"></i> <span>ElectroScoot HQ, Mumbai, India</span></div>
+    </div>
+
+    <div class="contact-form fade-in-right">
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="Number">Phone Number</label>
+        <input type="number" id="number" placeholder="Enter your Phone number" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+        <script>
+        fetch("/Footer/Hero_Footer.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+            });
+        </script>
+  <script src="/Contact/Contact_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battery-Cares</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/EvTips/Ev_Tips_style.css">
+</head>
+<body>
+  <!-- NavBar placeholder -->
+  <div id="NavBar-placeholder" class="hidden"></div>
+  <script>
+    fetch("/Nav-Bar/Hero_Nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("NavBar-placeholder").innerHTML = data;
+        document.getElementById("NavBar-placeholder").classList.add("show");
+      });
+  </script>
+
+  <!-- Header -->
+  <div class="header hidden">
+    <h1 class="animated-text" data-text="Here's how you can take care/ increase the life of your Electric Scooter"></h1>
+    <h2 class="animated-text" data-text="Worried about the performance of your Electric Scooter?"></h2>
+    <p class="animated-text" data-text="Don’t stress! We’ve put together a simple list of do’s and don’ts to help you extend the battery life and overall performance of your electric scooter."></p>
+    <p class="animated-text" data-text="Every electric scooter has its own maintenance needs—and yours deserves special care. By following these easy tips, you’ll get the most out of your ride and proudly be part of the SmartRideRevolution!"></p>
+  </div>
+
+  <!-- Button grid -->
+  <div class="button-grid hidden">
+    <button class="btn animated-text" data-text="ALL"></button>
+    <button class="btn animated-text" data-text="BATTERY CARE"></button>
+    <button class="btn animated-text" data-text="CHARGING"></button>
+    <button class="btn animated-text" data-text="GENERAL"></button>
+  </div>
+
+  <!-- Battery Care -->
+  <div class="heading hidden"><h1 class="animated-text" data-text="Battery Care"></h1></div>
+  <div class="gird-container">
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B1.webp" alt="images"><p class="animated-text" data-text="Always use a damp cloth to clean the battery in case of dirt."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B2.png" alt="images"><p class="animated-text" data-text="Never wash the battery with water."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B3.png" alt=""><p class="animated-text" data-text="Always charge the battery under shade or in a ventilated area."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B4.png" alt=""><p class="animated-text" data-text="It is not recommended to charge the battery under direct sunlight."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B5.png" alt=""><p class="animated-text" data-text="If not using the scooter, charge battery to 60% to preserve life."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B6.png" alt=""><p class="animated-text" data-text="Never dismantle the battery casing under any circumstances."></p></div>
+  </div>
+
+  <!-- Charging -->
+  <div class="heading hidden"><h1 class="animated-text" data-text="Charging"></h1></div>
+  <div class="gird-container">
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="Images/B7.png" alt="images"><p class="animated-text" data-text="Connect your charger to a Standard (earthed) socket."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B8.png" alt="images"><p class="animated-text" data-text="Never connect the charger in a non-standard (unearthed) socket."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B9.png" alt=""><p class="animated-text" data-text="Keep battery charge above 55V at all times."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B10.png" alt=""><p class="animated-text" data-text="Don’t ride if voltage drops below 53V."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B11.png" alt=""><p class="animated-text" data-text="Ensure scooter is OFF during charging."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B12.png" alt=""><p class="animated-text" data-text="Use the original charger only."></p></div>
+  </div>
+
+  <!-- General -->
+  <div class="heading hidden"><h1 class="animated-text" data-text="General"></h1></div>
+  <div class="gird-container">
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B17.jpeg" alt="images"><p class="animated-text" data-text="Respect the weight limit to protect the motor."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B14.jpeg" alt="images"><p class="animated-text" data-text="Don’t overload the scooter — it strains the motor."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B15.jpeg" alt=""><p class="animated-text" data-text="Keep tires properly inflated to reduce battery drag."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-xmark" style="color: red;"></i><img src="/Images/B16.jpeg" alt=""><p class="animated-text" data-text="Low pressure drains battery and reduces efficiency."></p></div>
+    <div class="gird-item hidden"><i class="fa-regular fa-circle-check" style="color: green;"></i><img src="/Images/B18.jpeg" alt=""><p class="animated-text" data-text="Pay attention to brakes, handlebars, and folding."></p></div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder" class="hidden"></div>
+  <script>
+    fetch("/Footer/Hero_Footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        document.getElementById("footer-placeholder").classList.add("show");
+      });
+  </script>
+
+  <!-- Scroll and animation script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          entry.target.classList.remove('hidden');
+        }
+      });
+    });
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.animated-text').forEach(container => {
+      const text = container.dataset.text;
+      if (text) {
+        container.innerHTML = '';
+        text.split('').forEach((char, index) => {
+          const span = document.createElement('span');
+          span.textContent = char === ' ' ? '\u00A0' : char;
+          span.style.animationDelay = `${index * 0.03}s`;
+          container.appendChild(span);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

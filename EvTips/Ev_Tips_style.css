@@ -1,0 +1,148 @@
+/* File: Ev_Tips_style.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  padding: 10px;
+  margin: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 550;
+}
+
+.header p {
+  font-size: 27px;
+  font-weight: lighter;
+  word-spacing: 5px;
+  margin: 10px;
+}
+
+.header h1 {
+  color: rgb(138, 136, 136);
+  font-size: 70px;
+  font-weight: 550;
+}
+
+.header h2 {
+  color: rgb(26, 24, 24);
+  font-size: 40px;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  padding: 1px;
+  margin: 50px;
+  font-size: 35px;
+  color: #747171;
+  margin-top: 10px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 16px;
+  justify-content: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.btn {
+  padding: 20px 30px;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  background-color: transparent;
+  border-radius: 900px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3b82f6;
+  color: #e9ecef;
+}
+
+.gird-container {
+  margin: 1px;
+  margin-top: -90px;
+  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.gird-item {
+  display: grid;
+  padding: 1px;
+  width: 650px;
+  height: 440px;
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.gird-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.gird-item i {
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.gird-item p {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateZ(-20px);
+  animation: fadeInUp 0.9s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
