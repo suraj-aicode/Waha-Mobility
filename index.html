@@ -24,7 +24,7 @@
 
 <div id="NavBar-placeholder"></div>
 <script>
-  fetch("Nav-Bar/Hero_Nav.html")
+  fetch("/Nav-Bar/Hero_Nav.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("NavBar-placeholder").innerHTML = data;
@@ -244,7 +244,7 @@
 <!-- Footer -->
 <div id="footer-placeholder"></div>
 <script>
-  fetch("Footer/Hero_Footer.html")
+  fetch("/Footer/Hero_Footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer-placeholder").innerHTML = data;
@@ -255,4 +255,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
  
